@@ -50,26 +50,40 @@ if(!isset($_POST['submit'])){
 
 // task 3  Palindroms
 
-  function pol(){
-  // for onload values and error handling
+function pol(){
+  // for onload values and error handling - 
+  //remade this as area from where gets palindroms user gives last value (till)
+
     if($num = htmlentities($_POST['inp_value'])) {
       $num = htmlentities($_POST['inp_value']);
     } else {
       $num="101";
     }
 
-    $str = $num;
-    $strLen = strlen($str)-1;
-    $revStr = '';
+    $base = 1; //value from where starts area til input value ($num)
 
-      for($a=$strLen; $a>=0; $a--)
-      {
-          $revStr.=$str[$a];
-      }
-    if($revStr == $str)
-        echo "Palindroms: ", $str  ;
-    else
-      echo "Palindroms Not Found";
+    for($base=$base; $base<=$num; $base++)
+    {
+    $B = $base;
+    $revNR = '';
+
+    while($B != 0)
+    {
+      $revNR = $revNR * 10;
+      $revNR = $revNR + ($B % 10);
+      $B = floor($B / 10);
+    }
+    
+    if(($base == $revNR) && ($base != 0))
+    {
+      $flag = 1;
+      echo "$base ";
+    }
+    }
+
+    if($flag == 0)
+    echo "There is no palindrome number between the given range";  
+  
   };
 
   // task 4 - password
