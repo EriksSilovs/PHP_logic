@@ -5,5 +5,6 @@ Display All Prime numbers from task 1
 Find Palindroms
 Generate random password from Prime numbers
 
-![Screenshot 2021-01-07 at 12 10 30](https://user-images.githubusercontent.com/70655354/103880179-740ffa80-50e1-11eb-9227-b4a2f11bdf9e.jpg)
+![Screenshot 2021-01-08 at 21 14 53](https://user-images.githubusercontent.com/70655354/104054921-9c3d4d80-51f6-11eb-88f5-5c6e76941727.jpg)
+
 
